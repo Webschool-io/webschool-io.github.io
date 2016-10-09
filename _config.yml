@@ -1,0 +1,15 @@
+
+# General settings
+title: Webschool's Blog
+description: >
+  Feito pela comunidade para a comunidade.
+baseurl: ''
+url: 'Webschool-io.github.io'
+
+# Build settings
+markdown: kramdown
+
+gems:
+  - jekyll-mentions
+  - jekyll-admin
+  - jemoji

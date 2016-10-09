@@ -1,6 +1,6 @@
 # Webschool's blog
 
-> Blog da comunidade para a comunidade
+> Blog da comunidade para a comunidade.
 
 ## Features
 > Veja a [to-do list](https://github.com/Webschool-io/blog/projects/1)
@@ -17,3 +17,32 @@
 + Paginação dos post
 + Area administrativa local
 + Barra de busca por post
+
+## Setup
+
+```
+gulp
+```
+
+## Contribuição
+
+Os commits devem ser nesse formato:
+
++ **Add nome-da-nova-funcionalidade**  
+    **ex:** _Add novos icones_
+
+
++ **Fix nome-da-correção**  
+    **ex:** _Fix bug ao abrir o menu_
+
++ **Remove o-que-removeu**  
+    **ex:** _Remove código repetido_
+
++ **New post nome-do-post**  
+    **ex:** _New post como fazer um blog_
+
++ **Update post nome-do-post-que-atualizou**  
+    **ex:** _Update post como fazer um blog_
+
++ **Remove post nome-do-post-que-removeu**  
+    **ex:** _Remove post como fazer um blog_

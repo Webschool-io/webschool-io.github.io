@@ -1,0 +1,28 @@
+{
+  "name": "webschool-blog",
+  "description": "Blog da comunidade para a comunidade",
+  "main": "gulpfile.js",
+  "authors": [
+    "webschool"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "blog",
+    "webschool",
+    "comunidade"
+  ],
+  "homepage": "https://github.com/Webschool-io/blog",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/js/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "nprogress": "^0.2.0",
+    "zepto_lazyload": "^1.8.4",
+    "zepto": "^1.1.6"
+  }
+}

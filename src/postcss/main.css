@@ -1,0 +1,9 @@
+
+
+body {
+  background-color: inherit;
+
+  > h1 {
+    color: purple;
+  }
+}
