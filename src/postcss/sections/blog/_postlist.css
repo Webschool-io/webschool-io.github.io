@@ -72,6 +72,7 @@ $post_header: 18rem;
     /*Post snippet*/
     > .post-content {
       padding: 1rem;
+      line-height: 150%;
       font-size: 1.5rem;
       color: $color_black;
     }
