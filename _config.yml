@@ -8,8 +8,21 @@ url: 'Webschool-io.github.io'
 
 # Build settings
 markdown: kramdown
+permalink: /:title/
 
+# Dependencies
 gems:
   - jekyll-mentions
   - jekyll-admin
   - jemoji
+
+# Links
+links:
+  - title: Home
+    url: /
+  - title: Blog
+    url: /blog/
+  - title: Cursos
+    url: /cursos/
+  - title: Feed
+    url: /feed.xml/

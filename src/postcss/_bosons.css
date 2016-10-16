@@ -1,0 +1,19 @@
+
+/*Title sytle*/
+@define-mixin title $size, $color {
+  text-align: center;
+  color: $color_gray;
+  color: $color;
+  font-size: $size;
+  margin: 0rem;
+  z-index: 1;
+}
+
+/*Text style*/
+@define-mixin text $size, $color {
+  text-align: center;
+  color: $color;
+  font-size: $size;
+  margin: 0rem;
+  z-index: 1;
+}

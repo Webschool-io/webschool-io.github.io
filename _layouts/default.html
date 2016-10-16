@@ -5,7 +5,21 @@
 </head>
 <body>
 
-  {{ content }}
+  {% include sprites.html %}
+  <!-- load styles and fons -->
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl  }}">
 
+  <section class="wrapper">
+    <div class="canvas">
+      {% include header/menu.html %}
+
+      <section class="container">
+        {% include header/header.html %}
+        {{ content }}
+      </section>
+    </div>
+  </section>
+
+  <script src="{{ "/assets/js/main.min.js" | prepend: site.baseurl  }}"></script>
 </body>
 </html>

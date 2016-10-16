@@ -5,7 +5,7 @@ import gulp from 'gulp'
 import path from './paths'
 
 export default function watch () {
-  gulp.watch(path.postcss.src, ['styles'])
+  gulp.watch(path.watch.postcss, ['styles'])
   gulp.watch(path.js.src, ['js'])
   gulp.watch(path.images.src, ['images'])
   gulp.watch([

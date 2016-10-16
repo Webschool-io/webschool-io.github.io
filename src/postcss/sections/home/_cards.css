@@ -1,0 +1,53 @@
+
+.content-card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  /*Course box*/
+  > .course {
+    margin: 3rem 2rem;
+    margin-bottom: 3rem;
+    flex-basis: 20rem;
+    border: 1px solid $color_gray;
+
+    /*Course header*/
+    > .course-header {
+      position: relative;
+      width: 100%;
+      height: 18rem;
+
+      /*Course image*/
+      > .course-header-banner {
+        cursor: pointer;
+        position: absolute;
+        width: 100%;
+        height: @width;
+        background-size: cover;
+        background-position: center;
+
+        /*Course image overlay*/
+        > .course-header-banner-overlay {
+          position: absolute;
+          width: 100%;
+          height: @width;
+          opacity: 0.5;
+          background-image: linear-gradient(to top, $color_black 20%, transparent);
+
+          &:hover {
+            background-image: none;
+          }
+        }
+      }
+    }
+
+    /*Course description*/
+    > .course-content {
+      padding: 1rem;
+      font-size: 1.5rem;
+      color: $color_black;
+    }
+  }
+
+}

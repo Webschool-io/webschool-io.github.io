@@ -1,0 +1,60 @@
+
+/*Menu*/
+/*====*/
+.menu {
+  position: absolute;
+  width: 30rem;
+  height: 100vh;
+  right: -30rem;
+  background-color: $color_blue_dark;
+
+  > .nav {
+
+    /*Label menu*/
+    > h2 {
+      color: $color_gray;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    /*Links*/
+    > ul {
+      list-style: none;
+      padding: 0;
+
+      > a {
+        text-decoration: none;
+        color: $color_gray;
+
+        > li {
+          padding: 2.5rem 2rem 2.5rem 2rem;
+          font-size: 1.8rem;
+          transition: all .2s ease;
+          display: flex;
+
+          /*Change box color*/
+          &:hover {
+            background-color: $color_gray;
+            color: $color_blue_dark;
+          }
+
+          /*Change icon color*/
+          &:hover > .nav-icon {
+            fill: $color_blue_dark;
+          }
+
+          /*Icon*/
+          > .nav-icon {
+            margin-right: 1rem;
+            width: 3rem;
+            fill: $color_gray;
+            height: @width;
+          }
+
+        }
+      }
+
+    }
+  }
+
+}

@@ -1,0 +1,4 @@
+
+.wrapper.show .canvas {
+  transform: translate3d(-30rem, 0, 0);
+}

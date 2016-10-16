@@ -1,0 +1,35 @@
+
+
+/*Header*/
+/*======*/
+.header {
+  max-width: 100vw;
+  /*background-image: linear-gradient(45deg, #fff, #f4f4f4, #fff);*/
+  /*background-color: $color_gray;*/
+  border-bottom: 1px solid $color_gray;
+
+  > .header-nav {
+    margin: 0 auto;
+    max-width: 80rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > .header-nav-logo {
+      
+      > img {
+        height: 8rem;
+        margin-left: 2rem;
+      }
+    }
+
+    > .header-nav-menu {
+      margin-right: 2rem;
+      cursor: pointer;
+      width: 3rem;
+      fill: $color_black;
+      height: auto;
+    }
+  }
+
+}

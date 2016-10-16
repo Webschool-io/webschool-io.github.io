@@ -1,0 +1,34 @@
+
+/*Enable on developmente mode*/
+/*===========================*/
+/** {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}*/
+
+html,
+body {
+  font-family: $font_family;
+  font-size: $font_size;
+  box-sizing: border-box;
+
+  @media (max-width: 320px) {
+    font-size: $font_size_small;
+  }
+}
+
+
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
+  height: 100vh;
+
+  /*Header, content and menu*/
+  .canvas {
+    transition: all .2s ease-in-out;
+
+    /*Header and content*/
+    > .container {
+      position: relative;
+    }
+  }
+}

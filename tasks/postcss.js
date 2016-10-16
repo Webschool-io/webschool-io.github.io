@@ -9,6 +9,7 @@ import precss from 'precss'
 import postcssInstagram from 'postcss-instagram'
 import postcssAnimation from 'postcss-animation'
 import postcssClean from 'postcss-clean'
+import fontMagican from 'postcss-font-magician'
 
 // Paths
 import path from './paths'
@@ -19,7 +20,8 @@ export default function styles () {
     precss(),
     postcssInstagram(),
     postcssAnimation(),
-    postcssClean()
+    postcssClean(),
+    fontMagican()
   ]
 
   return gulp.src(path.postcss.src)

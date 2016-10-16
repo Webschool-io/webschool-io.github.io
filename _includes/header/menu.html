@@ -1,0 +1,15 @@
+<div class="menu">
+  <nav class="nav">
+    <h2>MENU</h2>
+    <ul>
+      {% for link in site.links %}
+        <a href="{{ site.baseurl }}{{ link.url }}">
+          <li>
+            <svg class="nav-icon">
+              <use xlink:href="#icon-{{ link.title | replace: 'Cursos', 'Courses' | downcase }}"></use>
+            </svg><span>{{ link.title }}<span></li>
+        </a>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>

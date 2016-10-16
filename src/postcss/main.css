@@ -1,9 +1,33 @@
 
+/*Variables*/
+/*=========*/
 
-body {
-  background-color: inherit;
+/*Colors*/
+$color_blue_dark: #374e59;
+$color_blue_middle: #007086;
+$color_blue_light: #10acc5;
+$color_gray: #f4f4f4;
+$color_gray_dark: #ccc;
+$color_black: #444;
+$color_black_light: #aaa;
+$color_green_light: #6ed5a2;
 
-  > h1 {
-    color: purple;
-  }
-}
+/*Typography*/
+$font_family: 'Bree Serif', serif;
+$font_size: 10px;
+$font_size_small: 8px;
+
+
+/*Imports*/
+/*=======*/
+@import '_normalize.css';
+@import '_nprogress.css';
+@import '_helpers.css';
+@import '_bosons.css';
+@import '_general.css';
+@import '_syntax-highlight.css';
+@import 'header/_header.css';
+@import 'header/_menu.css';
+@import 'sections/blog/_postlist.css';
+@import 'sections/blog/_post-content.css';
+@import 'sections/home/_home.css';

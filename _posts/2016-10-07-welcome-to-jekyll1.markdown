@@ -1,18 +1,13 @@
 ---
 layout: post
-title:  "Constructor Pattern"
-date:   2016-10-07 09:39:34 -0300
-image: https://blog.mywork.art.br/assets/img/halfeld-igor-lu%C3%ADz/constructor-pattern/constructor.png
-author: suissa
+title:  "Começando com ReactJs"
+date:   2016-10-07 08:39:34 -0300
+image: https://blog.mywork.art.br/assets/img/halfeld-igor-lu%C3%ADz/come%C3%A7ando-com-reactjs/react.svg
+author: yyx990803
 tags:
  - Vue.js
  - Welcome
  - Design Pattern
- - Javascript
- - python
- - Vue.js
- - Vue-router
- - Vuex
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
