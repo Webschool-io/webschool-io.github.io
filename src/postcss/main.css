@@ -22,13 +22,13 @@ $font_size_small: 8px;
 /*Imports*/
 /*=======*/
 @import '_normalize.css';
-@import '_nprogress.css';
 @import '_helpers.css';
 @import '_bosons.css';
 @import '_general.css';
 @import '_syntax-highlight.css';
 @import 'header/_header.css';
 @import 'header/_menu.css';
+@import 'sections/_footer.css';
 @import 'sections/blog/_post-list.css';
 @import 'sections/blog/_post-content.css';
 @import 'sections/blog/_post-header.css';

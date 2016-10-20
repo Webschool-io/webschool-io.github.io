@@ -16,6 +16,10 @@ gems:
   - jekyll-admin
   - jemoji
 
+# Gems config
+jekyll-mentions:
+  base_url: https://github.com
+
 # Links
 links:
   - title: Home
