@@ -1,0 +1,25 @@
+<section class="tags">
+
+
+  {% for tag in site.tags  %}
+    <div class="tag-box">
+
+      <!-- Title -->
+      <h1 class="tag" id="{{ tag[0] | slugify }}">
+        <a class="tag-title" href="/tags/#{{ tag[0] | slugify }}">#{{ tag[0] | downcase | slugify }}</a>
+      </h1>
+
+      <!-- Post with tag -->
+      {% for post in tag[1] reversed %}
+      <ul class="tag-list">
+        <a class="tag-list-post" href="{{ site.url }}{{ post.url }}">
+          <li>{{ post.title }}</li>
+          <span class="tag-list-post-date">{{ post.date | date_to_long_string | upcase }}</span>
+        </a>
+      </ul>
+      {% endfor %}
+    </div>
+  {% endfor %}
+
+
+</section>

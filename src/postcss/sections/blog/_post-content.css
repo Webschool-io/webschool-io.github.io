@@ -9,6 +9,7 @@
 
 .post-content {
   margin: 1rem auto;
+  padding: 2rem;
   max-width: 80rem;
   line-height: 250%;
   color: $color_black;
@@ -79,6 +80,7 @@
 
   > img,
   > p > img {
+    margin: 5rem 0 5rem 0;
     width: 100%;
   }
 

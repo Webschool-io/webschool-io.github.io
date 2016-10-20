@@ -1,66 +1,43 @@
+;(($, webschool, window, undefined) => {
 
-let webschool = (($, window, undefined) => {
 
-  function init () {
+  let App = {
 
-    toggleMenu()
+    // Start everything
+    init () {
+      this.toggleMenu()
+      this.handleRoutes()
+    },
 
-    // To deal with a single file
-    switch (window.location.pathname) {
-      case '/blog/':
-        loadAuthors()
-        return
-      default:
+    // Menu toggle
+    toggleMenu () {
+      $('.header-nav-menu').on('click', evt => {
+        $('.wrapper').toggleClass('show')
+      })
+    },
 
+    handleRoutes () {
+      webschool.Router(window.location.pathname, this.loadAuthors, /\/blog\//)
+      webschool.Router(window.location.pathname, this.loadAuthors, /(\/blog\/)+.+/)
+    },
+    // Load author
+    loadAuthors () {
+      webschool.$ajax(res => {
+        let authors = res.map(post => post.author)
+
+        authors.forEach(author => {
+          webschool.$ajax(res => {
+
+            // Set name
+            $(`#${author}>.post-author-name`).text(res.name)
+            // Set photo
+            $(`#${author}>.post-author-photo`).css('background-image', `url('${res.avatar_url}')`)
+
+          }, 'GET', `https://api.github.com/users/${author}`)
+        })
+      })
     }
   }
 
-
-  function toggleMenu () {
-    $('.header-nav-menu').on('click', evt => {
-      $('.wrapper').toggleClass('show')
-    })
-  }
-
-
-  function loadAuthors () {
-
-    let targets = []
-
-    Ajax(res => {
-      let authors = res.map(post => post.author)
-
-      authors.forEach(author => {
-        Ajax(res => {
-
-          // Set name
-          $(`#${author}>.post-author-name`).text(res.name)
-          // Set photo
-          $(`#${author}>.post-author-photo`).css('background-image', `url('${res.avatar_url}')`)
-          
-        }, 'GET', `https://api.github.com/users/${author}`)
-      })
-    })
-
-  }
-
-  function Ajax (success, method='GET', url='/search.json') {
-    $.ajax({
-      url,
-      method,
-      dataType: 'json',
-      success,
-      error: err => console.log(new Error(err))
-    })
-  }
-
-
-  return {
-    init
-  }
-
-})(Zepto, window)
-
-;(() => {
-  webschool.init()
-})()
+  App.init()
+})(Zepto, webschool, window)

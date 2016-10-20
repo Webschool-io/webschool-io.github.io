@@ -19,6 +19,12 @@ $post_header: 18rem;
     margin-bottom: 3rem;
     flex-basis: 30rem;
     border: 1px solid $color_gray;
+    box-shadow: 0rem 0rem 6rem $color_gray_middle;
+    transition: all .1s ease-in-out;
+
+    &:hover {
+      box-shadow: 0rem 0rem 0rem $color_gray_middle;
+    }
 
     /*Post header*/
     > .post-header {
@@ -42,11 +48,11 @@ $post_header: 18rem;
           width: 100%;
           height: @width;
           opacity: 0.5;
-          background-image: linear-gradient(to top, $color_black 20%, transparent);
+          background-image: linear-gradient(to top, $color_black, transparent);
 
-          &:hover {
+          /*&:hover {
             background-image: none;
-          }
+          }*/
         }
       }
 
@@ -56,7 +62,7 @@ $post_header: 18rem;
         bottom: 1rem;
         font-size: 2.3rem;
         color: $color_gray;
-        text-shadow: 0rem 0.3rem 0.5rem $color_black;
+        /*text-shadow: 0rem 0.3rem 0.5rem $color_black;*/
       }
 
       > .post-header-date {
@@ -65,7 +71,7 @@ $post_header: 18rem;
         bottom: 1rem;
         font-size: 1.1rem;
         color: $color_gray;
-        text-shadow: 0rem 0.3rem 0.5rem $color_black;
+        /*text-shadow: 0rem 0.3rem 0.5rem $color_black;*/
       }
     }
 

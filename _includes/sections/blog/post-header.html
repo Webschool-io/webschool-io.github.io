@@ -1,0 +1,23 @@
+
+
+<section class="post-header" style="background-image: url('{{ page.image }}')">
+
+  <!-- Overlay -->
+  <div class="post-header-overlay"></div>
+  
+  <!-- Post title -->
+  <article class="post-header-content">
+    <h1 class="post-header-content-title">{{ page.title }}</h1>
+
+    <!-- Post author -->
+    <div class="post-author" id="{{ page.author }}">
+      <figure class="post-author-photo"></figure>
+      <a href="/authors/#{{ page.author | slugify }}" class="post-author-name"></a>
+      {% for tag in page.tags %}
+      <a class="post-author-tag" href="/tags/#{{ tag | slugify }}">{{ tag | slugify }}</a>
+      {% endfor %}
+    </div>
+  </article>
+
+
+</section>

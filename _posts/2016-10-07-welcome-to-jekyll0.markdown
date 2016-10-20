@@ -5,14 +5,10 @@ date:   2016-10-07 11:39:34 -0300
 image: https://blog.mywork.art.br/assets/img/halfeld-igor-lu%C3%ADz/redisdb/redis.png
 author: Halfeld
 tags:
-- Vue.js
-- Welcome
-- Design Pattern
 - Javascript
 - python
 - Vue.js
-- Vue-router
-- Vuex
+
 ---
 # Introdução
 
@@ -55,7 +51,6 @@ if (cluster.isMaster) {
     cluster.fork();
     return;
 }
-```
 
 const server = http.createServer(function(req, res){
   res.writeHead(200, {'Content-Type': 'text/html'});
@@ -124,6 +119,7 @@ O nginx possui suporte para três mecanismos de balanceamento de carga, são ele
 
 - **Round-Robin**: (padrão) Distribuição feito de forma circular, ou seja, se tivermos três máquinas e seis requisições, a distribuição ficará assim:
 
+
 Servidores | Requisições
 ---------- | -----------
 Servidor 1 | Req 1       | Req 4
@@ -140,7 +136,7 @@ ou seja, segue 1-2-3, 1-2-3, 1-2-3 ....
 
 Exemplo de _Load Balancer_:
 
-![Exemplo de load balancer](/assets/img/halfeld-igor-luíz/escalonando-aplicações-nodejs/load-balancing.png)
+![Exemplo de load balancer](https://camo.githubusercontent.com/67abf81df4da8b87cbc8c3222e68abb57220597a/68747470733a2f2f636c6475702e636f6d2f626e5f434a46505a63652d3230303078323030302e706e67)
 
 vamos ao arquivo `nginx.conf` na parte que nos interessa de novo e acrecentar o seguinte:
 

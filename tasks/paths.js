@@ -7,7 +7,10 @@ module.exports = {
       // `${process.cwd()}/src/js/lib/nprogress/nprogress.js`,
       `${process.cwd()}/src/js/lib/zepto/zepto.js`,
       // `${process.cwd()}/src/js/lib/zepto_lazyload/jquery.lazyload.js`,
-      `${process.cwd()}/src/js/*.js`
+      `${process.cwd()}/src/js/core.js`,
+      `${process.cwd()}/src/js/router.js`,
+      `${process.cwd()}/src/js/ajax.js`,
+      `${process.cwd()}/src/js/main.js`
     ],
     dest: `${process.cwd()}/assets/js/`
   },

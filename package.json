@@ -20,16 +20,10 @@
   "bugs": {
     "url": "https://github.com/Webschool-io/blog/issues"
   },
-  "browserify": {
-    "transform": [
-      "babelify"
-    ]
-  },
   "homepage": "https://github.com/Webschool-io/blog#readme",
   "devDependencies": {
     "babel-core": "^6.17.0",
     "babel-preset-es2015": "^6.16.0",
-    "babelify": "^7.3.0",
     "browser-sync": "^2.17.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",

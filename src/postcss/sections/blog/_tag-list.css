@@ -1,0 +1,52 @@
+
+
+.tags {
+  margin: 0 auto;
+  max-width: 80rem;
+
+
+  > .tag-box {
+    margin-top: 5rem;
+    margin-bottom: @margin-top;
+
+    > .tag {
+
+      > .tag-title {
+        font-size: 4rem;
+        color: $color_blue_middle;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+
+    > .tag-list {
+      padding: 0;
+      list-style: none;
+      padding-top: 1rem;
+      padding-bottom: @padding-top;
+      border-bottom: 1px solid $color_gray_dark;
+
+      > .tag-list-post {
+        text-decoration: none;
+        color: $color_black_light;
+        font-size: 2.5rem;
+        transition: all .2s linear;
+
+        &:hover {
+          color: $color_black;
+        }
+
+        > .tag-list-post-date {
+          font-size: 1.5rem;
+        }
+      }
+
+    }
+
+  }
+
+}

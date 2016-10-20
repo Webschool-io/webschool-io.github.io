@@ -5,9 +5,9 @@ date:   2016-10-07 10:39:34 -0300
 image: https://blog.mywork.art.br/assets/img/halfeld-igor-lu%C3%ADz/escalonando-aplica%C3%A7%C3%B5es-nodejs/nodejs.png
 author: Halfeld
 tags:
- - Vue.js
- - Welcome
- - Design Pattern
+  - Framework
+  - React
+  - Github
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

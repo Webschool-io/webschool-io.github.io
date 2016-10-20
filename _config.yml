@@ -8,7 +8,7 @@ url: 'Webschool-io.github.io'
 
 # Build settings
 markdown: kramdown
-permalink: /:title/
+permalink: /blog/:title/
 
 # Dependencies
 gems:
