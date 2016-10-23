@@ -10,6 +10,8 @@ module.exports = {
       `${process.cwd()}/src/js/core.js`,
       `${process.cwd()}/src/js/router.js`,
       `${process.cwd()}/src/js/ajax.js`,
+      `${process.cwd()}/src/js/load-authors.js`,
+      `${process.cwd()}/src/js/load-authors-list.js`,
       `${process.cwd()}/src/js/main.js`
     ],
     dest: `${process.cwd()}/assets/js/`

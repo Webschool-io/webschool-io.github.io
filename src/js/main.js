@@ -16,27 +16,13 @@
       })
     },
 
+    // To deal with a sigle script
     handleRoutes () {
-      webschool.Router(window.location.pathname, this.loadAuthors, /\/blog\//)
-      webschool.Router(window.location.pathname, this.loadAuthors, /(\/blog\/)+.+/)
+      webschool.Router(window.location.pathname, webschool.loadAuthors, /\/blog\/$/)
+      webschool.Router(window.location.pathname, webschool.loadAuthors, /\/blog\/+.+/)
+      webschool.Router(window.location.pathname, webschool.loadListAuthors, /\/authors/)
     },
-    // Load author
-    loadAuthors () {
-      webschool.$ajax(res => {
-        let authors = res.map(post => post.author)
 
-        authors.forEach(author => {
-          webschool.$ajax(res => {
-
-            // Set name
-            $(`#${author}>.post-author-name`).text(res.name)
-            // Set photo
-            $(`#${author}>.post-author-photo`).css('background-image', `url('${res.avatar_url}')`)
-
-          }, 'GET', `https://api.github.com/users/${author}`)
-        })
-      })
-    }
   }
 
   App.init()

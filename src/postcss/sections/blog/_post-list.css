@@ -81,6 +81,11 @@ $post_header: 18rem;
       line-height: 150%;
       font-size: 1.5rem;
       color: $color_black;
+
+      > .emoji {
+        margin: 0;
+        width: auto;
+      }
     }
 
     /*Author box*/

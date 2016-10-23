@@ -6,13 +6,13 @@
   width: 30rem;
   height: 100vh;
   right: -30rem;
-  background-color: $color_blue_dark;
+  background-color: $color_gray;
 
   > .nav {
 
     /*Label menu*/
     > h2 {
-      color: $color_gray;
+      color: $color_blue_dark;
       font-size: 2.5rem;
       text-align: center;
     }
@@ -24,7 +24,7 @@
 
       > a {
         text-decoration: none;
-        color: $color_gray;
+        color: $color_blue_dark;
 
         > li {
           padding: 2.5rem 2rem 2.5rem 2rem;
@@ -34,20 +34,20 @@
 
           /*Change box color*/
           &:hover {
-            background-color: $color_gray;
-            color: $color_blue_dark;
+            background-color: $color_blue_dark;
+            color: $color_gray;
           }
 
           /*Change icon color*/
           &:hover > .nav-icon {
-            fill: $color_blue_dark;
+            fill: $color_gray;
           }
 
           /*Icon*/
           > .nav-icon {
             margin-right: 1rem;
-            width: 3rem;
-            fill: $color_gray;
+            width: 2.5rem;
+            fill: $color_blue_dark;
             height: @width;
           }
 

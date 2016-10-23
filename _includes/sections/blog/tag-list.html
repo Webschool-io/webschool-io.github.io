@@ -12,7 +12,7 @@
       <!-- Post with tag -->
       {% for post in tag[1] reversed %}
       <ul class="tag-list">
-        <a class="tag-list-post" href="{{ site.url }}{{ post.url }}">
+        <a class="tag-list-post" href="{{ post.url }}">
           <li>{{ post.title }}</li>
           <span class="tag-list-post-date">{{ post.date | date_to_long_string | upcase }}</span>
         </a>

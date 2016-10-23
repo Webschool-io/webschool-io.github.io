@@ -1,0 +1,19 @@
+<section class="authors">
+  <article class="author-content">
+
+    {% for author in site.data.authors %}
+      <div class="author" id="{{ author.username }}">
+
+        <!-- Photo -->
+        <figure class="author-photo"></figure>
+
+        <!-- Info -->
+        <div class="author-header">
+          <h2 class="author-name"></h2>
+          <p class="author-description">{{ author.description }}</p>
+        </div>
+      </div>
+    {% endfor %}
+
+  </article>
+</section>
