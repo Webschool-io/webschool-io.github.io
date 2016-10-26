@@ -6,7 +6,13 @@
         <a href="{{ site.baseurl }}{{ link.url }}">
           <li>
             <svg class="nav-icon">
-              <use xlink:href="#icon-{{ link.title | replace: 'Cursos', 'Courses' | downcase }}"></use>
+              <use
+                xlink:href="#icon-{{ link.title
+                  | replace: 'Cursos', 'courses'
+                  | replace: 'Autores', 'authors'
+                  | replace: 'Escrever...', 'writer'
+                  | replace: 'Feed', 'rss'
+                  | downcase }}"></use>
             </svg><span>{{ link.title }}<span></li>
         </a>
       {% endfor %}

@@ -28,5 +28,11 @@ links:
     url: /blog/
   - title: Cursos
     url: /cursos/
+  - title: Autores
+    url: /authors/
+  - title: Tags
+    url: /tags/
+  - title: Escrever...
+    url: /write/
   - title: Feed
-    url: /feed.xml/
+    url: /feed.xml

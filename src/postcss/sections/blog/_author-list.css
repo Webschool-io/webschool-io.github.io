@@ -15,11 +15,15 @@
     > .author {
       margin-top: 2rem;
       margin-bottom: 2rem;
-      height: 10rem;
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: linear-gradient(to top, $color_gray, #fff);
+      border-bottom: 1px solid $color_gray_dark;
 
       > .author-photo {
-        flex-basis: 10rem;
+        width: 10rem;
+        flex-basis: @width;
         border-radius: 50%;
         background-size: cover;
         background-position: center;
@@ -29,11 +33,13 @@
         flex-basis: 100%;
 
         > .author-name {
+          text-align: center;
           font-size: 2rem;
           color: $color_blue_dark;
         }
 
         > .author-description {
+          text-align: center;
           font-size: 1.5rem;
           color: $color_black;
         }
