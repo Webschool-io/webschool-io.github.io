@@ -12,6 +12,43 @@
           <h2 class="author-name"></h2>
           <p class="author-description">{{ author.description }}</p>
         </div>
+
+        <!-- Link -->
+        <div class="author-links">
+          <a title="Github" target="_blank" href="{{ author.username | prepend: 'http://github.com/' }}">
+            <svg class="icon">
+              <use xlink:href="#icon-github"></use>
+            </svg>
+          </a>
+          {% if author.twitter %}
+            <a title="Twitter" target="_blank" href="{{ author.twitter | prepend: 'https://twitter.com/' }}">
+              <svg class="icon">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          {% endif %}
+          {% if author.linkedin %}
+            <a title="Linkedin" target="_blank" href="{{ author.linkedin | prepend: 'https://br.linkedin.com/in/ '}}">
+              <svg class="icon">
+                <use xlink:href="#icon-linkedin"></use>
+              </svg>
+            </a>
+          {% endif %}
+          {% if author.codepen %}
+            <a title="Codepen" target="_blank" href="{{ author.codepen | prepend: 'http://codepen.io/' }}">
+              <svg class="icon">
+                <use xlink:href="#icon-codepen"></use>
+              </svg>
+            </a>
+          {% endif %}
+          {% if author.site %}
+            <a title="Website" target="_blank" href="{{ author.site }}">
+              <svg class="icon">
+                <use xlink:href="#icon-link"></use>
+              </svg>
+            </a>
+          {% endif %}
+        </div>
       </div>
     {% endfor %}
 

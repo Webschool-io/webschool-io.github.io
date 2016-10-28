@@ -29,6 +29,7 @@
         background-position: center;
       }
 
+      /*Info*/
       > .author-header {
         flex-basis: 100%;
 
@@ -42,6 +43,29 @@
           text-align: center;
           font-size: 1.5rem;
           color: $color_black;
+        }
+      }
+
+      /*Links*/
+      > .author-links {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        > a {
+
+          > .icon {
+            width: 2.5rem;
+            height: @width;
+            fill: $color_black_light;
+            transition: fill .2s ease-in-out;
+
+            &:hover {
+              fill: $color_black;
+            }
+          }
         }
       }
 
