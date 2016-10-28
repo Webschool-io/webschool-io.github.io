@@ -84,10 +84,14 @@
     font-size: 1.5rem;
   }
 
-  > img,
-  > p > img {
-    margin: 5rem 0 5rem 0;
+  /*> img,*/
+  /*> p > img,*/
+  img:not(.emoji) {
+    margin: 8rem 0 8rem 0;
     width: 100%;
+    border: 1px solid $color_black_light;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 10rem 0.1rem $color_black_light;
   }
 
   table {

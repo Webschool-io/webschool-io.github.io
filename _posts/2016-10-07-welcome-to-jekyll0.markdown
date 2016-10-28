@@ -136,7 +136,7 @@ ou seja, segue 1-2-3, 1-2-3, 1-2-3 ....
 
 Exemplo de _Load Balancer_:
 
-![Exemplo de load balancer](https://camo.githubusercontent.com/67abf81df4da8b87cbc8c3222e68abb57220597a/68747470733a2f2f636c6475702e636f6d2f626e5f434a46505a63652d3230303078323030302e706e67)
+![Exemplo de load balancer](/assets/img/code.png)
 
 vamos ao arquivo `nginx.conf` na parte que nos interessa de novo e acrecentar o seguinte:
 
