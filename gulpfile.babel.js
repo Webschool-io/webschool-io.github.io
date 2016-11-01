@@ -8,7 +8,9 @@ import path from './tasks/paths'
 import browserSync from './tasks/browser-sync'
 import jekyllBuild from './tasks/jekyll-build'
 import jekyllReload from './tasks/jekyll-reload'
+import jekyllAdmin from './tasks/jekyll-admin'
 import watch from './tasks/watch'
+import watchPosts from './tasks/watch-posts'
 import postcss from './tasks/postcss'
 import images from './tasks/images'
 import js from './tasks/js'
@@ -28,9 +30,11 @@ gulp.task('server', () => browserSync())
 // Jekyll reload
 gulp.task('jekyll:build', () => jekyllBuild())
 gulp.task('jekyll:reload', () => jekyllReload())
+gulp.task('jekyll:admin', ['watch:posts'], () => jekyllAdmin())
 
 // Watch
 gulp.task('watch', () => watch())
+gulp.task('watch:posts', () => watchPosts())
 
 // Default task
 gulp.task('default', ['js', 'styles', 'images', 'jekyll:build', 'server', 'watch'])

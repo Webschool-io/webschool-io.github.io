@@ -1,10 +1,10 @@
 
 /*Page placeholders*/
 /*=================*/
-@define-mixin space $size {
+@define-mixin space $size, $margin {
   font-size: $size;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 8rem;
+  margin-bottom: $margin;
   color: $color_blue_dark;
 }
 
@@ -16,15 +16,21 @@
   color: $color_black;
 
   h1 {
-    @mixin space 3.5rem;
+    @mixin space 3.5rem, 5rem;
   }
 
   h2 {
-    @mixin space 2.6rem;
+    @mixin space 2.6rem, 2rem;
   }
 
   h3 {
-    @mixin space 2rem;
+    @mixin space 2rem, 2rem;
+  }
+
+  h4,
+  h5,
+  h6 {
+    @mixin space 1.8rem, 2rem;
   }
 
   p {
