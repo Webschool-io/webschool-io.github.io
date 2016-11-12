@@ -18,8 +18,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-image: linear-gradient(to top, $color_gray, #fff);
-      border-bottom: 1px solid $color_gray_dark;
+      /*background-image: linear-gradient(to top, $color_gray, #fff);*/
+      /*border-bottom: 1px solid $color_gray_dark;*/
 
       > .author-photo {
         width: 10rem;
@@ -40,6 +40,7 @@
         }
 
         > .author-description {
+          max-width: 50rem;
           text-align: center;
           font-size: 1.5rem;
           color: $color_black;
@@ -48,8 +49,8 @@
 
       /*Links*/
       > .author-links {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
         width: 100%;
         display: flex;
         justify-content: space-around;
