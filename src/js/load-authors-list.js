@@ -9,14 +9,20 @@
 
         authors.forEach(author => {
           webschool.$ajax(res => {
-            // Set photo
-            $(`#${author}>.author-photo`).css('background-image', `url('${res.avatar_url}')`)
+            let targets = {
+              name: $(`#${author}>.author-header>.author-name`),
+              photo: $(`#${author}>.author-photo`),
+              description: $(`#${author}>.author-header>.author-description`)
+            }
 
-            // Set name
-            $(`#${author}>.author-header>.author-name`).text(res.name)
+              // Set photo
+            targets.photo.css('background-image', `url('${res.avatar_url}')`)
 
-            // Set description
-            if ($(`#${author}>.author-header>.author-description`).text() === '') $(`#${author}>.author-header>.author-description`).text(res.bio)
+              // Set name
+            targets.name.text(res.name)
+
+              // Set description
+            if (targets.description.text() === '') targets.description.text(res.bio)
 
           }, 'GET', `https://api.github.com/users/${author}`)
         })
