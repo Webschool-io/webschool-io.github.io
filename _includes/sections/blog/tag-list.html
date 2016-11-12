@@ -1,5 +1,11 @@
 <section class="tags">
 
+  <!-- Show all tags -->
+  <div class="tag-box">
+    {% for tag in site.tags  %}
+      <a href="/tags/#{{ tag[0] | slugify }}" class="tag-block">{{ tag[0] | slugify }}</a>
+    {% endfor %}
+  </div>
 
   {% for tag in site.tags  %}
     <div class="tag-box">
