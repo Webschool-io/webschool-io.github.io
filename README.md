@@ -31,9 +31,11 @@ Os commits devem ser nesse formato:
 + **Add nome-da-nova-funcionalidade**  
     **ex:** _Add novos icones_
 
-
 + **Fix nome-da-correção**  
     **ex:** _Fix bug ao abrir o menu_
+
++ **Refactoring nome-da-refatoração**  
+    **ex:** _Refactoring index page_
 
 + **Remove o-que-removeu**  
     **ex:** _Remove código repetido_
