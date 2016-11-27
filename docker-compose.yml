@@ -4,12 +4,13 @@ version: '2'
 services:
   writer:
     container_name: webschool-writer
-    build: docker/jekyll/
-    command: bundle exec jekyll s
+    build: .
     ports:
       - '80:4000'
-  # dev:
-  #   build: docker/gulp
-  #   command: gulp
-  #   ports:
-  #     - '80:3000'
+    command: ./node_modules/.bin/gulp jekyll:admin
+  dev:
+    container_name: webschool-dev
+    build: .
+    ports:
+      - '80:3000'
+    command: ./node_modules/.bin/gulp

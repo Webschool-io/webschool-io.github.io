@@ -18,6 +18,8 @@ A Stack que foi usada para cria-lo é Gulp, Jekyll e Docker. Com o Jekyll sendo 
 
 # Começando a escrever posts
 
+## Com docker
+
 Para escrever você precisa ter o [Docker](http://docker.com/) e o [Docker Compose](https://docs.docker.com/compose/) instalado.
 
 Em um ambiente linux ou mac, para instalar o docker é só rodar o comando:
@@ -34,13 +36,25 @@ mv docker-compose-Linux-x86_64 /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 ```
 
-depois disso, é só clonar o repositório na sua maquina e rodar:
+depois disso, é só clonar o repositório na sua maquina e rodar caso vá escrever:
 
 ```bash
-docker-compose run writer
+docker-compose run --service-ports writer
 ```
 
-e estará acessivel no seu [http://localhost](http://localhost) e então, é só entrar no admin em [http://localhost/admin](http://localhost/admin) para começar a escrever.
+ou caso vá desenvolver:
+
+```bash
+docker-compose run --service-ports dev
+```
+
+caso você vá escrever, estará acessivel no seu [http://localhost:4000](http://localhost:4000)  e então, é só entrar no admin em [http://localhost:4000/admin](http://localhost:4000/admin) para começar a escrever e caso vá contribuir com código, estará acessivel em [http://localhost:3000](http://localhost:3000).
+
+## Sem docker
+
+Para usar sem o docker, basta ter instalado o Node.js com o Gulp e o Ruby com Jekyll, e usar o comando `gulp jekyll:admin` para escrever ou `gulp` caso você irá fazer alguma contribuição com código.
+
+caso você vá escrever, estará acessivel no seu [http://localhost:4000](http://localhost:4000)  e então, é só entrar no admin em [http://localhost:4000/admin](http://localhost:4000/admin) para começar a escrever e caso vá contribuir com código, estará acessivel em [http://localhost:3000](http://localhost:3000).
 
 ## Usando emojis do Github no post
 
