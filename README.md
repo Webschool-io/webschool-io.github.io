@@ -13,7 +13,6 @@
 + Suporte a usar emojis do Github fazendo apenas`:+1:`
 + Icones SVG
 + Lazy load para images
-+ NProgress para loading
 + Paginação dos post
 + Area administrativa local
 + Barra de busca por post
