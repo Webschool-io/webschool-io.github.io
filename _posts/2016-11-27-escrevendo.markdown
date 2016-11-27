@@ -1,7 +1,7 @@
 ---
 title: Escrever...
 layout: post
-date: '2016-10-07 09:39:34 -0300'
+date: '2016-11-27 09:39:34 -0300'
 image: "/assets/img/halfeld/escrever/banner.png"
 author: halfeld
 tags:
