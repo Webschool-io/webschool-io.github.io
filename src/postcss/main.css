@@ -34,5 +34,6 @@ $font_size_small: 8px;
 @import 'sections/blog/_post-header.css';
 @import 'sections/blog/_tag-list.css';
 @import 'sections/blog/_author-list.css';
+@import 'sections/blog/_post-comments.css';
 @import 'sections/home/_home.css';
 @import 'sections/courses/_courses.css';

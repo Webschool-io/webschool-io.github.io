@@ -4,7 +4,7 @@ title: Webschool's Blog
 description: >
   Feito pela comunidade para a comunidade.
 baseurl: ''
-url: 'Webschool-io.github.io'
+url: 'http://webschool-io.github.io'
 
 # Build settings
 markdown: kramdown
