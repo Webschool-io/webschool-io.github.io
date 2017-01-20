@@ -1,22 +1,28 @@
 ;(($, webschool, window, undefined) => {
 
 
-  let App = {
+  const App = {
 
-    // Start everything
+    /**
+     * Start everything
+     */
     init () {
       this.toggleMenu()
       this.handleRoutes()
     },
 
-    // Menu toggle
+    /**
+     * Menu toggle
+     */
     toggleMenu () {
       $('.header-nav-menu').on('click', evt => {
         $('.wrapper').toggleClass('show')
       })
     },
 
-    // To deal with a sigle script
+    /**
+     * To deal with a sigle script
+     */
     handleRoutes () {
       webschool.Router(window.location.pathname, webschool.loadAuthors, /\/blog\/$/)
       webschool.Router(window.location.pathname, webschool.loadAuthors, /\/blog\/+.+/)

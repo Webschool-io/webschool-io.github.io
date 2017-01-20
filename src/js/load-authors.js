@@ -5,11 +5,11 @@
     name: 'loadAuthors',
     method () {
       webschool.$ajax(res => {
-        let authors = res.map(post => post.author)
+        const authors = res.map(post => post.author)
 
         authors.forEach(author => {
           webschool.$ajax(res => {
-            let targets = {
+            const targets = {
               name: $(`#${author}>.post-author-name`),
               photo: $(`#${author}>.post-author-photo`)
             }

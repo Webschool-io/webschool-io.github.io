@@ -1,6 +1,10 @@
 
-let webschool = (($, window, undefined) => {
+const webschool = (($, window, undefined) => {
 
+  /**
+   * Inject method on the Global (webschool)
+   * @param  {Array} services
+   */
   function $inject (...services) {
     services.forEach(service => {
       this[service.name] = service.method
