@@ -2,15 +2,11 @@
 version: '2'
 
 services:
-  writer:
-    container_name: webschool-writer
+  halfeld-boilerplate:
+    container_name: hafeld-boilerplate
     build: .
+    command: gulp
+    volumes:
+      - .:/src
     ports:
-      - '80:4000'
-    command: ./node_modules/.bin/gulp jekyll:admin
-  dev:
-    container_name: webschool-dev
-    build: .
-    ports:
-      - '80:3000'
-    command: ./node_modules/.bin/gulp
+      - '8080:3000'
